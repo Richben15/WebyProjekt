@@ -1,0 +1,292 @@
+#logo {
+  width: 100px; /* Upravte podle potřeby */
+  height: auto;
+  margin-right: 10px;
+}
+.container {
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, white 50%, red 50%);
+    color: 
+    black;
+    padding: 10px 20px;
+}
+.navigace ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigace li {
+  margin-left: 20px;
+}
+
+.navigace a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navigace a:hover {
+  text-decoration: underline;
+}
+.logo-h1 {
+  display: flex;
+  align-items: center;
+}
+h1 {
+  color: rgb(255, 0, 0);
+}
+.nadpis {
+  background: linear-gradient(to right, red 50%, white 50%); /* Světlá červená barva; upravte dle potřeby */
+  padding: 20px 0; /* Přidává prostor nad a pod textem v divu */
+  text-align: center; /* Zarovnává text na střed */
+  color: black;
+}
+
+.nadpis h2 {
+  font-size: 32px; /* Zvětšuje velikost nadpisu; upravte dle potřeby */
+  color: black; /* Barva textu */
+}
+
+
+
+p {
+  text-align: justify; /* Umožňuje rovnoměrné zarovnání obou stran textu */
+  line-height: 1.6; /* Zvětšuje řádkování pro lepší čitelnost */
+  margin: 20px 0; /* Přidává vertikální prostor před a za odstavcem */
+}
+.content-wrapper {
+  display: flex;
+  align-items: flex-start; /* Zajistí, že obsah bude na začátku */
+}
+
+.text {
+  flex: 1; /* Text zabere dostupný prostor */
+  padding-right: 20px; /* Přidává odsazení mezi textem a obrázkem */
+}
+
+.muzizeny {
+  flex: 1; /* Obrázek zabere dostupný prostor */
+  max-width: 50%; /* Omezuje šířku obrázku na polovinu kontejneru */
+  height: auto; /* Udržuje poměr stran obrázku */
+}
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: red; /* Červená pro záhlaví */
+    color: white;
+  }
+
+  tr {
+    background-color: red; /* Červená pro liché řádky */
+    color: white;
+  }
+
+  tr:nth-child(even) {
+    background-color: #ffffff; /* Bílá pro sudé řádky */
+    color: black;
+  }
+  .tabulka {
+    
+    width: 48%;
+    
+  }
+  #tabulkamuzu {
+   float: left;
+
+
+    
+  }
+  #tabulkazen {
+    float: right;
+  }
+  .black-header {
+    background-color: #000; /* Černé pozadí záhlaví */
+    color: #fff; /* Bílá barva textu */
+    padding: 10px; /* Vnější odsazení záhlaví */
+  }
+  
+  .social-icons {
+    display: flex; /* Zobrazí ikony vedle sebe */
+  }
+  
+  .social-icon {
+    width: 30px; /* Nastaví šířku ikony */
+    height: auto; /* Udržuje poměr stran ikony */
+    margin-right: 10px; /* Odsazení mezi ikonami */
+    background-color: black;
+  }
+  .black-footer {
+    background-color: #000; /* Černé pozadí zápatí */
+    color: #fff; /* Bílá barva textu */
+    padding: 10px; /* Vnější odsazení zápatí */
+    display: flex; /* Zobrazí prvky v zápatí vedle sebe */
+    justify-content: space-between; /* Rozdělí prvky rovnoměrně po šířce zápatí */
+    align-items: center; /* Zarovná prvky vertikálně na střed */
+  }
+  
+  .contact-info p {
+    margin: 0; /* Odsazení odstavců v kontaktních informacích */
+  }
+  
+  .last-updated {
+    margin: 0; /* Odsazení odstavce s datem poslední aktualizace */
+  }
+  #kontakty-table tr:nth-child(-n+2) {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Odstranění stylizace pro ostatní řádky tabulky kontakty */
+  #kontakty-table tr:nth-child(n+3) {
+    background-color: white;
+    color: black;
+  }
+  .kontejner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Přidáno pro lepší responzivitu */
+    padding: 20px;
+    
+  }
+  
+  .left-side {
+    flex: 1;
+    min-width: 300px; /* Minimální šířka pro zachování rozložení při zmenšení */
+    margin-right: 20px;
+  }
+  
+  .right-side {
+    flex: 1;
+    min-width: 300px; /* Minimální šířka pro zachování rozložení při zmenšení */
+  }
+  form {
+    margin: 20px 0;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  /* Pro tablety a chytré telefony */
+
+/* Úprava navigace pro lepší použitelnost na malých zařízeních */
+@media only screen and (max-width: 1024px) {
+  .hamburger-menu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .hamburger-icon {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+  }
+
+  .navigace {
+    display: none;
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    z-index: 799;
+    color: white;
+  }
+
+  .navigace.visible {
+    display: block;
+  }
+
+  .navigace ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigace li {
+    margin: 10px 0;
+  }
+
+  .navigace a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  /* Úprava loga a navigace, aby se vešly na menší obrazovky */
+  #logo {
+    width: 80px;
+    height: auto;
+    margin-right: 5px;
+  }
+
+  .logo-h1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 10px 5px;
+  }
+
+  /* Úprava velikosti tabulek pro lepší čitelnost na malých obrazovkách */
+  .tabulka {
+    width: 100%;
+    overflow-x: auto; /* Přidání horizontálního scrollování */
+  }
+
+  /* Úprava velikosti textu v tabulkách pro lepší čitelnost */
+  table {
+    font-size: 14px;
+  }
+
+  /* Úprava tlačítka pro lepší použitelnost na malých zařízeních */
+  form input[type="submit"] {
+    width: auto;
+  }
+}
+
+
+
+

@@ -1,0 +1,199 @@
+body {
+  font-family: Arial, sans-serif;
+}
+#logo {
+  width: 100px; /* Upravte podle potřeby */
+  height: auto;
+  margin-right: 10px;
+}
+.container {
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, white 50%, red 50%);
+    color: 
+    black;
+    padding: 10px 20px;
+}
+.navigace ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigace li {
+  margin-left: 20px;
+}
+
+.navigace a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navigace a:hover {
+  text-decoration: underline;
+}
+.logo-h1 {
+  display: flex;
+  align-items: center;
+}
+h1 {
+  color: rgb(255, 0, 0);
+}
+.nadpis {
+  background: linear-gradient(to right, red 50%, white 50%); /* Světlá červená barva; upravte dle potřeby */
+  padding: 20px 0; /* Přidává prostor nad a pod textem v divu */
+  text-align: center; /* Zarovnává text na střed */
+  color: black;
+}
+.nadpis h2 {
+  font-size: 32px; /* Zvětšuje velikost nadpisu; upravte dle potřeby */
+  color: black; /* Barva textu */
+}
+.black-header {
+  background-color: #000; /* Černé pozadí záhlaví */
+  color: #fff; /* Bílá barva textu */
+  padding: 10px; /* Vnější odsazení záhlaví */
+}
+
+.social-icons {
+  display: flex; /* Zobrazí ikony vedle sebe */
+}
+
+.social-icon {
+  width: 30px; /* Nastaví šířku ikony */
+  height: auto; /* Udržuje poměr stran ikony */
+  margin-right: 10px; /* Odsazení mezi ikonami */
+  background-color: black;
+}
+.black-footer {
+  background-color: #000; /* Černé pozadí zápatí */
+  color: #fff; /* Bílá barva textu */
+  padding: 10px; /* Vnější odsazení zápatí */
+  display: flex; /* Zobrazí prvky v zápatí vedle sebe */
+  justify-content: space-between; /* Rozdělí prvky rovnoměrně po šířce zápatí */
+  align-items: center; /* Zarovná prvky vertikálně na střed */
+}
+.contact-info p {
+  margin: 0; /* Odsazení odstavců v kontaktních informacích */
+}
+
+.last-updated {
+  margin: 0; /* Odsazení odstavce s datem poslední aktualizace */
+}
+.aktuality {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reportaz {
+  max-width: 80%;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.reportaz h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.reportaz-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reportaz img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.reportaz p.text {
+  
+  color: #666;
+  font-size: 18px;
+}
+
+.reportaz .datum {
+  text-align: right;
+  color: #999;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hamburger-menu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .hamburger-icon {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+  }
+
+  .navigace {
+    display: none;
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    z-index: 799;
+    color: white;
+  }
+
+  .navigace.visible {
+    display: block;
+  }
+
+  .navigace ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigace li {
+    margin: 10px 0;
+  }
+
+  .navigace a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  /* Úprava loga a navigace, aby se vešly na menší obrazovky */
+  #logo {
+    width: 80px;
+    height: auto;
+    margin-right: 5px;
+  }
+
+  .logo-h1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 10px 5px;
+  }
+
+  .aktuality .reportaz {
+    max-width: 100%;
+  }
+}
